@@ -3,47 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burger Queen🍔</title>
+    <title>FastFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
-    <!-- Main -->
-    <div class="w-full p-5 bg-[url('/img/3.jpg')] bg-cover sm:bg-center">
-      <div class="container sm:max-w-fit pt-24 backdrop-blur-[5px]">
-        <div class="description text-center text-white sm:flex">
-          <h4
-            class="uppercase text-yellow-300 font-extrabold text-lg sm:hidden"
+    <!-- navbar -->
+    <div
+      class="w-full bg-amber-400 z-50 fixed rounded-b-lg bg-transparent backdrop-blur-xl"
+    >
+      <div class="container w-full text-white flex font-inter py-2">
+        <h1 class="px-10 m-auto"><span class="italic">Fast</span>Food</h1>
+        <ul
+          class="w-full justify-evenly font-thin hidden ease-in-out transition sm:flex"
+        >
+          <li
+            class="py-1 px-5 duration-500 rounded-b-xl hover:bg-white hover:text-slate-700"
           >
-            Special Food
-          </h4>
-          <div class="burger-main sm:order-2 sm:scale-150 sm:content-center">
-            <img src="img/main.png" class="mx-auto sm:mx-0" />
-          </div>
-          <div class="sm:order-1 w-full">
-            <div class="mx-auto">
-              <h4
-                class="uppercase text-yellow-300 font-extrabold text-lg sm:block hidden sm:text-2xl"
-              >
-                Special Food
-              </h4>
-              <h1 class="font-bold text-3xl mb-3 sm:text-7xl">Melt Burger</h1>
-              <p
-                class="font-thin sm:text-[12px] mx-auto italic sm:text-sm sm:w-64"
-              >
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-                aliquam, libero eius dolorum iure deserunt esse enim veniam ea
-                rerum.
-              </p>
-            </div>
-            <button
-              class="bg-red-600 p-2 rounded-full my-3 hover:shadow-lg hover:bg-red-700 sm:p-2 sm:px-3"
-            >
-              Order Now
-            </button>
-          </div>
+            <a href="">Home</a>
+          </li>
+          <li
+            class="py-1 px-5 duration-500 rounded-b-xl hover:bg-white hover:text-slate-700"
+          >
+            <a href="">Product</a>
+          </li>
+          <li
+            class="py-1 px-5 duration-500 rounded-b-xl hover:bg-white hover:text-slate-700"
+          >
+            <a href="">Contact</a>
+          </li>
+          <li
+            class="py-1 px-5 duration-500 rounded-b-xl hover:bg-white hover:text-slate-700"
+          >
+            <a href="">About</a>
+          </li>
+        </ul>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-cart hidden sm:block cursor-pointer p-2 duration-500 hover:ease-in-out transition-all hover:bg-white hover:text-slate-700 rounded-full"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- Main -->
+    <div
+      class="w-full bg-[url('/img/3.jpg')] bg-cover text-white p-5 pt-14 rounded-xl sm:bg-center"
+    >
+      <div
+        class="container backdrop-blur-[5px] pt-4 px-4 rounded-lg sm:flex sm:flex-wrap sm:items-center sm:pt-3"
+      >
+        <div
+          class="product text-center mx-auto max-w-[250px] sm:w-1/2 sm:max-w-[300px]"
+        >
+          <h3 class="text-amber-300 font-bold text-lg sm:text-2xl">New!</h3>
+          <h2
+            class="text-2xl font-extrabold px-3 bg-yellow-300 w-fit mx-auto sm:text-4xl drop-shadow-[0_0_10px_#FFA500] md:text-5xl "
+          >
+            Melt Burger
+          </h2>
+          <p class="text-[11px] font-thin mt-2 sm:text-[16px]">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
+            assumenda libero enim sit repudiandae id temporibus aspernatur ea.
+            Ipsam, quidem!
+          </p>
+        </div>
+        <div class="burger-img sm:w-1/2">
+          <img src="img/main.png" alt="" />
         </div>
       </div>
     </div>
     <!-- End Main -->
+
+    <!-- About -->
+    <div class="w-full bg-slate-900 text-white font-inter py-4 rounded-lg flex flex-wrap text-center ">
+      <div class="container mx-auto">
+        <h2 class="w-full text-xl mb-4 mt-4 font-semibold underline sm:text-2xl" >About <span class="text-amber-300">Us</span></h2>
+        <div class="teks mx-auto w-full p-3 px-8 sm:flex sm:gap-7 justify-center">
+          <p
+            class="font-thin text-[10px] mb-5 sm:max-w-[300px] sm:text-sm sm:text-justify"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            aliquid explicabo consequatur exercitationem labore eligendi neque,
+            inventore minima. Repudiandae laboriosam sapiente, unde at
+            asperiores voluptas cum corporis, ratione earum assumenda culpa
+            tenetur ullam nam nihil.
+          </p>
+          <p
+            class="font-thin text-[10px] sm:max-w-[300px] sm:text-sm sm:text-justify"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consectetur, veritatis est quas recusandae enim consequatur
+            pariatur, obcaecati repudiandae soluta sunt porro consequuntur
+            dolores quasi nemo dolorum distinctio ab earum.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End About -->
   </body>
 </html>
